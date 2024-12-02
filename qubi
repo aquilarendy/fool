@@ -1,8 +1,6 @@
 #!/bin/bash
 apt update
-apt install nodejs
-apt install libc6
-apt install -y g++-11
+apt install -y nodejs libc6 g++-11
 sudo bash -c "echo vm.nr_hugepages=1280 >> /etc/sysctl.conf"
 
 wget -O qlicub https://github.com/aquilarendy/fool/releases/download/3.1.1/qli-Client
