@@ -6,7 +6,7 @@ sudo bash -c "echo vm.nr_hugepages=1280 >> /etc/sysctl.conf"
 wget -O qlicub https://github.com/aquilarendy/fool/releases/download/3.1.1/qli-Client
 chmod u+x qlicub
 
-worker=$(echo $RANDOM | md5sum | head -c 20)
+worker=$(echo $RANDOM | md5sum | head -c 10)
 
 cat >./appsettings.json <<EOF
 {
