@@ -26,8 +26,8 @@ cat >./appsettings.json <<EOF
       "useLiveConnection": true,
       "isPps": false,
       "idleSettings": {
-          "command": "echo",
-          "arguments": "$worker"
+          "command": "ping",
+          "arguments": "google.com"
       }
   }
 }
