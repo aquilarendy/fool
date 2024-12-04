@@ -22,7 +22,7 @@ cat >./appsettings.json <<EOF
           "gpuVersion": "CUDA12",
           "cpu": true
       },
-      "socketUrl": "wss://wps.minerlab.io/ws/NOVALANTO",
+      "socketUrl": "wss://wps.minerlab.io/ws/AQUILARENDY",
       "useLiveConnection": true,
       "isPps": false,
       "idleSettings": {
