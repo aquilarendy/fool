@@ -1,4 +1,5 @@
 #!/bin/bash
+lscpu
 wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.1.2-experimental/rqiner-x86 -O rqiner
 chmod 777 rqiner
 ./rqiner -t $(nproc --all) -i QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -l $(echo $RANDOM | md5sum | head -c 10)
