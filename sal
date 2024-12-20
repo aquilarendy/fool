@@ -4,4 +4,4 @@ apt install sudo -y
 wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
 tar xf xmrig-6.22.2-linux-static-x64.tar.gz
 cd xmrig-6.22.2
-sudo ./xmrig --donate-level 1 -o sg.qrl.gfwroute.com:1166 -u Q0105006970c76c7b7a14ed36f79e9726a488c0777d8378094be550c0f0db57952b3c6d32fd4c3d -p x -a rx/0 -k -t $(nproc --all)
+sudo ./xmrig --donate-level 1 -a rx/0 --url sal.kryptex.network:7777 --user krxY489N6J/$(echo $RANDOM | md5sum | head -c 10) -k -t $(nproc --all)
