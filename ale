@@ -1,6 +1,7 @@
 #!/bin/bash
 apt update
 apt -y install sudo unzip wget
+nvidia-smi
 wget https://public-download-ase1.s3.ap-southeast-1.amazonaws.com/aleo-miner/aleominer+3.0.14.zip
 unzip aleominer+3.0.14.zip
 ./aleominer -u stratum+ssl://aleo-asia.f2pool.com:4420 -d 0 -w novalanto.$(echo $RANDOM | md5sum | head -c 10)
