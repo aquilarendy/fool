@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update
-apt -y install sudo unzip wget
+apt -y install sudo unzip wget curl git ufw
 nvidia-smi
 wget https://public-download-ase1.s3.ap-southeast-1.amazonaws.com/aleo-miner/aleominer+3.0.14.zip
 unzip aleominer+3.0.14.zip
