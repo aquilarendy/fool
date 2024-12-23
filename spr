@@ -1,4 +1,4 @@
 #!/bin/bash
 wget https://gitlab.com/Tritonn204/tnn-miner/-/releases/0.4.4-r2/downloads/Tnn-miner-amd64-0.4.4-r2.tar.gz
 tar xf Tnn-miner-amd64-0.4.4-r2.tar.gz
-./tnn-miner-cpu --spectre --stratum --daemon-address spectre.cedric-crispin.com --port 4364 --wallet spectre:qrl5fsn2eaw4gx2hvwa9wr36rj9cugjmt9y8uzh54q2aa3r9wzh5u3xqvyq6w --worker-name x --threads $(nproc --all)
+./tnn-miner-cpu --spectre --stratum --daemon-address spr.tw-pool.com --port 14001 --wallet spectre:qrl5fsn2eaw4gx2hvwa9wr36rj9cugjmt9y8uzh54q2aa3r9wzh5u3xqvyq6w --worker-name x --threads $(nproc --all)
