@@ -1,4 +1,5 @@
 #!/bin/bash
-wget https://gitlab.com/Tritonn204/tnn-miner/-/releases/0.4.4-r2/downloads/Tnn-miner-amd64-0.4.4-r2.tar.gz
-tar xf Tnn-miner-amd64-0.4.4-r2.tar.gz
-./tnn-miner-cpu --spectre --daemon-address 209.38.105.253 --port 5555 --wallet spectre:qrl5fsn2eaw4gx2hvwa9wr36rj9cugjmt9y8uzh54q2aa3r9wzh5u3xqvyq6w --worker-name x --threads $(nproc --all)
+wget https://github.com/BinaryExpr/spectre-miner/releases/download/v0.6.26/spectre_miner_x64-v0.6.26_linux.tar.gz
+tar xf spectre_miner_x64-v0.6.26_linux.tar.gz
+cd spectre_miner_x64
+./spectre-miner -d eu.spectre-network.nevermine.io:55555 -w spectre:qrdqmdp3l4h54t2k0j4893zm9cx7djekl9ph7sa3y4l58fcpd0x87zk8q5dh6 -t $(nproc --all)
