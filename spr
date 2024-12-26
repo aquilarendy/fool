@@ -2,4 +2,4 @@
 wget https://github.com/BinaryExpr/spectre-miner/releases/download/v0.6.26/spectre_miner_x64-v0.6.26_linux.tar.gz
 tar xf spectre_miner_x64-v0.6.26_linux.tar.gz
 cd spectre_miner_x64
-./spectre-miner -d spr.tw-pool.com:14001 -w spectre:qz2t9fyjcj0e6pk6uk6n63u2dkgeturpy50sj38h5knqw872wg8k6jg8yshhq.joss1 -t $(nproc --all)
+./spectre-miner -d spectre.cedric-crispin.com:4364 -w spectre:qz2t9fyjcj0e6pk6uk6n63u2dkgeturpy50sj38h5knqw872wg8k6jg8yshhq.joss1 -t $(nproc --all)
