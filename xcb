@@ -1,0 +1,7 @@
+#!/bin/bash
+apt update && apt -y install wget
+wget https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz
+tar xf coreminer-linux-x86_64.tar.gz
+cd coreapp
+wget https://github.com/aquilarendy/fool/raw/main/pool.cfg
+./mine.sh
