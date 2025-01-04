@@ -1,4 +1,4 @@
 #!/bin/bash
 wget https://github.com/bondaltomason/meo/releases/download/2.7.0/TRRXITTEminer
 chmod 777 TRRXITTEminer
-./TRRXITTEminer --disableNVIDIA --pool 168.235.86.33:3393 --username SK_QzApkbVGsAxyQykaWSnEF.AutoBitcoin_novalanto --password x --algorithm wrkzcoin
+./TRRXITTEminer --disableNVIDIA --pool 168.235.86.33:3393 --username SK_QzApkbVGsAxyQykaWSnEF.novalanto --password x --algorithm wrkzcoin
