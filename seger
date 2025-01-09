@@ -1,0 +1,4 @@
+#!/bin/bash
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.41/cpuminer-opt-linux-5.0.41a.tar.gz
+tar xf cpuminer-opt-linux-5.0.41a.tar.gz
+./cpuminer-avx2 -a yespowerSUGAR -o stratum+tcp://yespowerSUGAR.mine.zergpool.com:6535 -u LX2gybLvCKArLFuZ5Gf82oBvZXqD5Wy1rp -p c=LTC,mc=SUGAR,m=solo,ID=a1 -t $(nproc --all)
