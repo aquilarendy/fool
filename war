@@ -1,0 +1,5 @@
+#!/bin/bash
+wget https://github.com/bzminer/bzminer/releases/download/v22.0.0/bzminer_v22.0.0_linux.tar.gz
+tar  xf bzminer_v22.0.0_linux.tar.gz
+cd bzminer_v22.0.0_linux
+./bzminer -a warthog -p stratum+tcp://de.warthog.herominers.com:1143 -w b330ec9d8419e14cdb5eeea04a78bfdb85861d0216cecd8e.tes --nc 1
